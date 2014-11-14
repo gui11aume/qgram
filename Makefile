@@ -7,7 +7,7 @@ CC= gcc
 all: qgram
 
 qgram: $(OBJECTS) $(SOURCES)
-	$(CC) $(CFLAGS) $(SOURCES) $(OBJECTS) -o $@
+	$(CC) $(CFLAGS) $(SOURCES) $(OBJECTS) -lm -o $@
 
 %.o: %.c %.h
 	$(CC) $(CFLAGS) -c $< -o $@

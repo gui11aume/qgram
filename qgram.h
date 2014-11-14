@@ -1,6 +1,7 @@
 #ifndef _QGRAMS_PRIVATE_HEADER
 #define _QGRAMS_PRIVATE_HEADER
 
+#include <math.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,7 +25,7 @@ int_stack_t * new_int_stack (void);
 queue_t     * new_queue (unsigned int);
 uint32_t      queue_pop (queue_t *);
 int           queue_push (uint32_t, queue_t *);
-void          scan (FILE *, unsigned int, unsigned int, unsigned int);
+void          scan (FILE *, unsigned int, unsigned int, double);
 void          update_bins (char *, const int_stack_t *, uint32_t,
       int e, int);
 

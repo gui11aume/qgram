@@ -7,5 +7,5 @@ int main(void) {
       fprintf(stderr, "file not found\n");
       abort();
    }
-   scan(f, 10, 75, 3);
+   scan(f, 10, 75, .05);
 }
